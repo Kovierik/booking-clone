@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "static1.squarespace.com",
       },
+      {
+        protocol: "https",
+        hostname: "*.bstatic.com",
+      },
     ],
   },
   experimental: {
