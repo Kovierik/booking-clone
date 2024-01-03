@@ -1,5 +1,5 @@
 import React from "react";
-// import { fetchResults } from "@/lib/fetchResults";
+import { fetchResults } from "@/lib/fetchResults";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -23,6 +23,8 @@ async function SearchPage({ searchParams }: Props) {
   const results = await fetchResults(searchParams);
 
   if (!results) return <div>No results...</div>;
+
+  console.log(results);
 
   return <section>Results</section>;
 }
